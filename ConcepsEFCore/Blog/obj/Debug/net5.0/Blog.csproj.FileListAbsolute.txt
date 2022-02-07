@@ -1,0 +1,16 @@
+C:\Projetos\Pessoais\ConceptsEF-Core\ConcepsEFCore\Blog\bin\Debug\net5.0\Blog.exe
+C:\Projetos\Pessoais\ConceptsEF-Core\ConcepsEFCore\Blog\bin\Debug\net5.0\Blog.deps.json
+C:\Projetos\Pessoais\ConceptsEF-Core\ConcepsEFCore\Blog\bin\Debug\net5.0\Blog.runtimeconfig.json
+C:\Projetos\Pessoais\ConceptsEF-Core\ConcepsEFCore\Blog\bin\Debug\net5.0\Blog.runtimeconfig.dev.json
+C:\Projetos\Pessoais\ConceptsEF-Core\ConcepsEFCore\Blog\bin\Debug\net5.0\Blog.dll
+C:\Projetos\Pessoais\ConceptsEF-Core\ConcepsEFCore\Blog\bin\Debug\net5.0\ref\Blog.dll
+C:\Projetos\Pessoais\ConceptsEF-Core\ConcepsEFCore\Blog\bin\Debug\net5.0\Blog.pdb
+C:\Projetos\Pessoais\ConceptsEF-Core\ConcepsEFCore\Blog\obj\Debug\net5.0\Blog.csproj.AssemblyReference.cache
+C:\Projetos\Pessoais\ConceptsEF-Core\ConcepsEFCore\Blog\obj\Debug\net5.0\Blog.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\Pessoais\ConceptsEF-Core\ConcepsEFCore\Blog\obj\Debug\net5.0\Blog.AssemblyInfoInputs.cache
+C:\Projetos\Pessoais\ConceptsEF-Core\ConcepsEFCore\Blog\obj\Debug\net5.0\Blog.AssemblyInfo.cs
+C:\Projetos\Pessoais\ConceptsEF-Core\ConcepsEFCore\Blog\obj\Debug\net5.0\Blog.csproj.CoreCompileInputs.cache
+C:\Projetos\Pessoais\ConceptsEF-Core\ConcepsEFCore\Blog\obj\Debug\net5.0\Blog.dll
+C:\Projetos\Pessoais\ConceptsEF-Core\ConcepsEFCore\Blog\obj\Debug\net5.0\ref\Blog.dll
+C:\Projetos\Pessoais\ConceptsEF-Core\ConcepsEFCore\Blog\obj\Debug\net5.0\Blog.pdb
+C:\Projetos\Pessoais\ConceptsEF-Core\ConcepsEFCore\Blog\obj\Debug\net5.0\Blog.genruntimeconfig.cache

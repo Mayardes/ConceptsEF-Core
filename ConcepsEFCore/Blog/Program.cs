@@ -1,5 +1,6 @@
 ﻿using Blog.Data;
 using Blog.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 
@@ -26,16 +27,22 @@ namespace Blog
                 //ctx.Tags.Update(tag);
                 //ctx.SaveChanges();
 
-                try
-                {
-                    var tag = ctx.Tags.FirstOrDefault(x => x.Id == 3);
-                    ctx.Tags.Remove(tag);
-                    ctx.SaveChanges();
-                }
-                catch (Exception e)
-                {
-                    System.Console.WriteLine(e.Message);
-                }
+                //try
+                //{
+                //    var tag = ctx.Tags.FirstOrDefault(x => x.Id == 3);
+                //    ctx.Tags.Remove(tag);
+                //    ctx.SaveChanges();
+                //}
+                //catch (Exception e)
+                //{
+                //    System.Console.WriteLine(e.Message);
+                //}
+
+                //var tags = ctx.Tags.AsNoTracking().First(x => x.Id == 3);
+                var tags = ctx.Tags.AsNoTracking().FirstOrDefault(x => x.Id == 3);
+                
+
+                Console.WriteLine($"Tag id is:  {tags?.Id}");
             }
         }
     }

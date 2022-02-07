@@ -11,7 +11,7 @@ namespace Blog.Data
         public DbSet<User> Users { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-M3HIHDH\SQLEXPRESS; Database=BlogDatabase; Integrated Secutiry=true;");
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-M3HIHDH\SQLEXPRESS; Database=Blog; Integrated Security=true;");
         }
     }
 }

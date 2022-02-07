@@ -44,37 +44,47 @@ namespace Blog
 
                 //Console.WriteLine($"Tag id is:  {tags?.Id}");
 
-                var user = new User()
-                {
-                    Email = "mayardesoliveira@gmail.com",
-                    Image = "Urlconnection",
-                    Name = "Mayardes Oliveira",
-                    PasswordHash = "123",
-                    Slug = "Mayardes",
-                    Bio = "Mayardes Oliveira"
-                };
+                //var user = new User()
+                //{
+                //    Email = "mayardesoliveira@gmail.com",
+                //    Image = "Urlconnection",
+                //    Name = "Mayardes Oliveira",
+                //    PasswordHash = "123",
+                //    Slug = "Mayardes",
+                //    Bio = "Mayardes Oliveira"
+                //};
 
-                var category = new Category()
-                {
-                    Name = "Development",
-                    Slug = "Dev"
-                };
+                //var category = new Category()
+                //{
+                //    Name = "Development",
+                //    Slug = "Dev"
+                //};
 
-                var post = new Post()
-                {
-                    Category = category,
-                    Title = "Development software",
-                    Slug = "Dev",
-                    Author = user,
-                    Body = "<h1>Dev</h1>",
-                    CreateDate = DateTime.Now,
-                    LastUpdateDate = DateTime.Now,
-                    Summary = "Dev C#"
-                };
+                //var post = new Post()
+                //{
+                //    Category = category,
+                //    Title = "Development software",
+                //    Slug = "Dev",
+                //    Author = user,
+                //    Body = "<h1>Dev</h1>",
+                //    CreateDate = DateTime.Now,
+                //    LastUpdateDate = DateTime.Now,
+                //    Summary = "Dev C#"
+                //};
 
-                ctx.Posts.Add(post);
-                ctx.SaveChanges();
+                //ctx.Posts.Add(post);
+                //ctx.SaveChanges();
 
+                var posts = ctx.Posts
+                    .AsNoTracking()
+                    .Include(x => x.Author)
+                    .OrderByDescending(x => x.LastUpdateDate)
+                    .ToList();
+
+                foreach(Post post in posts)
+                    Console.WriteLine($"{post.Author?.Name}");
+
+                Console.ReadKey();
             }
         }
     }

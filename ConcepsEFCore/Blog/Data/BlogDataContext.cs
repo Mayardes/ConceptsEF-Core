@@ -14,6 +14,7 @@ namespace Blog.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=DESKTOP-M3HIHDH\SQLEXPRESS; Database=Blog; Integrated Security=true;");
+            optionsBuilder.LogTo(System.Console.WriteLine);
         }
     }
 }
